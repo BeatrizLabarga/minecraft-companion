@@ -1,59 +1,42 @@
-# Companion
+# Minecraft Companion – Aplicación Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.12.
+**Actividad grupal: Creación de nuestra primera web profesional**  
+**Asignatura:** Diseño y Tecnología Web  
+**Grupo 1:** Javier Montero Benlloch, Julieth Natalia Ortiz y Beatriz Labarga Fernández  
+**Fecha:** 25 de mayo de 2026
 
-## Development server
+## Descripción del proyecto
 
-To start a local development server, run:
+Minecraft Companion es una **Single Page Application (SPA)** desarrollada con Angular CLI. La aplicación ofrece a los fans de Minecraft un espacio interactivo con las siguientes secciones:
+
+- **Noticias:** últimas novedades del juego.
+- **Retos semanales:** desafíos para completar.
+- **Merchandising:** tienda con productos y contador de "me gusta".
+- **Galería de skins:** visualización y cambio de personajes con mensajes condicionales.
+- **Eventos:** lista de eventos y botón de inscripción.
+
+La aplicación es **responsiva** gracias a Bootstrap 5 y se ha probado en dispositivos móviles, tablet y escritorio.
+
+## Tecnologías utilizadas
+
+- Angular CLI versión 21.2.12
+- TypeScript
+- Bootstrap 5 (estilos y grid responsivo)
+- HTML5 / CSS3
+
+## Instalación y ejecución en local
+
+Sigue estos pasos para tener la aplicación funcionando en tu equipo:
 
 ```bash
+# 1. Clona el repositorio
+git clone https://github.com/BeatrizLabarga/minecraft-companion.git
+
+# 2. Accede a la carpeta del proyecto
+cd minecraft-companion
+
+# 3. Instala las dependencias (incluye Bootstrap)
+npm install
+
+# 4. Inicia el servidor de desarrollo
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

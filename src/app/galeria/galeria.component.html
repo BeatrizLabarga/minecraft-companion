@@ -1,0 +1,20 @@
+<div class="card h-100 shadow-sm">
+  <div class="card-header bg-info text-white">
+    <h2 class="h5 mb-0">🖼️ Galería de Skins</h2>
+  </div>
+  <div class="card-body">
+    <p>Skin seleccionada actualmente: <strong>{{ skinSeleccionada }}</strong></p>
+    
+    @if (skinSeleccionada === 'Creeper') {
+      <p class="text-danger fw-bold">⚠️ ¡Cuidado, va a explotar! 💥</p>
+    } @else {
+      <p class="text-success">😊 Este personaje es pacífico.</p>
+    }
+
+    <div class="d-flex gap-2 mt-3">
+      <button (click)="cambiarSkin('Steve')" class="btn btn-secondary">Ver Steve 🧑‍🌾</button>
+      <button (click)="cambiarSkin('Alex')" class="btn btn-secondary">Ver Alex 👩‍🦰</button>
+      <button (click)="cambiarSkin('Creeper')" class="btn btn-secondary">Ver Creeper 💚</button>
+    </div>
+  </div>
+</div>

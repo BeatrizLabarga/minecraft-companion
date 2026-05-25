@@ -1,0 +1,15 @@
+<div class="card h-100 shadow-sm">
+  <div class="card-header bg-warning text-dark">
+    <h2 class="h5 mb-0">📅 Próximos Eventos</h2>
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush mb-3">
+      @for (evento of eventos; track evento) {
+        <li class="list-group-item">{{ evento }}</li>
+      }
+    </ul>
+    <button (click)="apuntarse()" [disabled]="inscrito" class="btn btn-success w-100">
+      {{ inscrito ? '✔️ ¡Inscrito correctamente! 📝' : '✍️ Apuntarme al próximo evento' }}
+    </button>
+  </div>
+</div>

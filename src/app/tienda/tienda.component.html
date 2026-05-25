@@ -1,0 +1,15 @@
+<div class="card h-100 shadow-sm">
+  <div class="card-header bg-success text-white">
+    <h2 class="h5 mb-0">🛒 Merchandising Oficial</h2>
+  </div>
+  <div class="card-body text-center">
+    @if (enStock) {
+      <p>💎 Producto estrella: <strong>{{ producto }}</strong></p>
+    } @else {
+      <p class="text-danger">El producto se ha agotado en la tienda.</p>
+    }
+    <button (click)="darLike()" class="btn btn-primary mt-2">
+      👍 Me gusta este artículo ({{ likes }})
+    </button>
+  </div>
+</div>

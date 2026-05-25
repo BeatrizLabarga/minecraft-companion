@@ -1,0 +1,12 @@
+<div class="card h-100 shadow-sm">
+  <div class="card-header bg-primary text-white">
+    <h2 class="h5 mb-0">📰 Últimas noticias</h2>
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      @for (noticia of noticias; track noticia) {
+        <li class="list-group-item">{{ noticia }}</li>
+      }
+    </ul>
+  </div>
+</div>
